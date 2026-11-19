@@ -4,6 +4,8 @@
 
 [Дайджест на GitHub Pages](https://ilpaka.github.io/digest/) · [Задания агенту](tasks/) · [Журнал решений](ai-log.md)
 
+Вечерний процесс отправил выпуск из 15 новостей в личный Telegram-чат. [Снимки полученного сообщения в учебном отчёте](https://github.com/Ilpaka/TDSDB/tree/main/React/projects/p4-digest#сообщение-в-telegram).
+
 ## Запуск
 
 Для работы нужен Node.js 24 актуальной версии.
