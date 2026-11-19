@@ -4,7 +4,7 @@
 
 [Дайджест на GitHub Pages](https://ilpaka.github.io/digest/) · [Задания агенту](tasks/) · [Журнал решений](ai-log.md)
 
-Вечерний процесс отправил выпуск из 15 новостей в личный Telegram-чат. [Снимки полученного сообщения в учебном отчёте](https://github.com/Ilpaka/TDSDB/tree/main/React/projects/p4-digest#сообщение-в-telegram).
+Опубликованный сайт загружает новости из листа `news` при каждом открытии. 20 ноября n8n добавил в Google Таблицу 15 записей и отправил выпуск из таблицы в личный Telegram-чат. [Данные сайта в формате JSON](https://script.google.com/macros/s/AKfycbyNYTQFuTH7GbE1-rvgiR7sStQ1P0ljFYH5vPdmFn2AmELkGz_bYyxqN9dzSrdWhDL3/exec). Снимки ниже относятся к предыдущему выпуску из сохранённого файла. [Снимки полученного сообщения в учебном отчёте](https://github.com/Ilpaka/TDSDB/tree/main/React/projects/p4-digest#сообщение-в-telegram).
 
 ## Запуск
 
