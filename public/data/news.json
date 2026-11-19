@@ -1,0 +1,139 @@
+{
+  "news": [
+    {
+      "id": "https://habr.com/ru/articles/1109976/",
+      "date": "2026-11-19T14:34:57.000Z",
+      "source": "Хабр",
+      "title": "Как IT-стартап накапливает PR-долг и обещает рынку больше, чем может показать продукт",
+      "summary": "Автор называет PR-долгом разрыв между обещаниями стартапа и тем, что покупатель может проверить. На примерах с нагрузкой и конверсией он показывает, каких сведений клиентам не хватает в документации и кейсах.",
+      "tags": "бизнес",
+      "link": "https://habr.com/ru/articles/1109976/"
+    },
+    {
+      "id": "https://habr.com/ru/articles/1109970/",
+      "date": "2026-11-19T14:32:21.000Z",
+      "source": "Хабр",
+      "title": "1С-Битрикс выпустил bx-nginx 1.30.7 в ответ на новое раскрытие уязвимостей веб-сервера nginx",
+      "summary": "«1С-Битрикс» обновил пакет bx-nginx до версии 1.30.7 после выхода исправлений безопасности nginx. Разработчик рекомендует в первую очередь обновить серверы, доступные из интернета.",
+      "tags": "безопасность",
+      "link": "https://habr.com/ru/articles/1109970/"
+    },
+    {
+      "id": "https://habr.com/ru/articles/1109966/",
+      "date": "2026-11-19T14:26:56.000Z",
+      "source": "Хабр",
+      "title": "Бот, который ищет учеников для репетиторов: архитектура за 1187 ₽ в месяц",
+      "summary": "Бот находит в соцсетях запросы на занятия и пересылает их репетиторам. Автор объясняет, как отсекает рекламу при соотношении около двухсот постов на один полезный запрос и укладывается в бесплатные лимиты модели.",
+      "tags": "ИИ, программирование",
+      "link": "https://habr.com/ru/articles/1109966/"
+    },
+    {
+      "id": "https://habr.com/ru/companies/t2/articles/1108854/",
+      "date": "2026-11-19T14:25:06.000Z",
+      "source": "Хабр",
+      "title": "Золото, бриллианты и BigData: ювелирный рынок на данных",
+      "summary": "До покупки украшения клиент может сравнить цены у нескольких брендов и в итоге оформить заказ в магазине. Авторы разбирают, что этот путь позволяет узнать о выборе покупателей.",
+      "tags": "бизнес",
+      "link": "https://habr.com/ru/companies/t2/articles/1108854/"
+    },
+    {
+      "id": "https://habr.com/ru/articles/1109962/",
+      "date": "2026-11-19T14:16:50.000Z",
+      "source": "Хабр",
+      "title": "Как я превратил бесплатный SQL-курс и книгу в целую образовательную экосистему",
+      "summary": "Автор курса по SQL на Stepik сначала выпустил по его материалам бесплатную книгу. Теперь он рассказывает, как объединил учебные материалы и практические задания в один проект.",
+      "tags": "программирование",
+      "link": "https://habr.com/ru/articles/1109962/"
+    },
+    {
+      "id": "https://naked-science.ru/article/anthropology/zuby-erektusy",
+      "date": "2026-11-19T13:00:24.000Z",
+      "source": "Naked Science",
+      "title": "Зубы указали на выживание самого долгоживущего вида людей в азиатских джунглях",
+      "summary": "Китайские исследователи нашли свидетельства того, что Homo erectus сохранялся в Азии дольше, чем предполагали. По датировке находок его существование пересекалось с эпохой неандертальцев.",
+      "tags": "наука",
+      "link": "https://naked-science.ru/article/anthropology/zuby-erektusy"
+    },
+    {
+      "id": "https://naked-science.ru/article/archeology/hunnu-grobnitsa-piramida",
+      "date": "2026-11-19T11:45:48.000Z",
+      "source": "Naked Science",
+      "title": "В Монголии нашли подземную гробницу в форме перевернутой пирамиды",
+      "summary": "Археологи исследовали монгольское захоронение эпохи хунну возрастом около двух тысяч лет. На глубине более 14 метров сохранились римская чаша из стекла и нефритовые украшения.",
+      "tags": "наука",
+      "link": "https://naked-science.ru/article/archeology/hunnu-grobnitsa-piramida"
+    },
+    {
+      "id": "https://naked-science.ru/article/column/geny-vliyayut-na-gramotnost",
+      "date": "2026-11-19T07:59:16.000Z",
+      "source": "Naked Science",
+      "title": "Три четверти: ученые из России выяснили, насколько гены влияют на функциональную грамотность",
+      "summary": "Исследователи ВШЭ сравнили результаты 114 пар близнецов-восьмиклассников. По их оценке, генетические различия объясняют 76% разброса показателей функциональной грамотности в этой выборке.",
+      "tags": "наука",
+      "link": "https://naked-science.ru/article/column/geny-vliyayut-na-gramotnost"
+    },
+    {
+      "id": "https://naked-science.ru/article/column/borshhevik-protiv-urana",
+      "date": "2026-11-19T07:44:02.000Z",
+      "source": "Naked Science",
+      "title": "Борщевик против урана: в России создали биосорбент для очистки воды от радионуклидов",
+      "summary": "Исследователи испытали целлюлозу из борщевика для очистки воды. В эксперименте материал связал 68% урана-238 и удержал его от возвращения в воду.",
+      "tags": "наука",
+      "link": "https://naked-science.ru/article/column/borshhevik-protiv-urana"
+    },
+    {
+      "id": "https://naked-science.ru/article/physics/peredali-s-gravitatsii",
+      "date": "2026-11-19T07:17:29.000Z",
+      "source": "Naked Science",
+      "title": "Физики впервые передали сообщение с помощью гравитации",
+      "summary": "В эксперименте физики закодировали слово движениями массивного предмета. Гравиметр зарегистрировал изменения поля, даже когда передатчик и приёмник разделяла кирпичная стена.",
+      "tags": "наука",
+      "link": "https://naked-science.ru/article/physics/peredali-s-gravitatsii"
+    },
+    {
+      "id": "https://www.ixbt.com/news/2026/11/19/evropa-polucila-eshhe-odnogo-potencialnogo-konkurenta-spacex-ispanskaia-pld-space-podpisala-pervyi-kommerceskii-kontrakt-na-zapusk-rakety-miura-5.html",
+      "date": "2026-11-19T14:30:00.000Z",
+      "source": "iXBT",
+      "title": "Европа получила ещё одного потенциального конкурента SpaceX: испанская PLD Space подписала первый коммерческий контракт на запуск ракеты Miura 5",
+      "summary": "Mitsubishi Electric заказала у испанской PLD Space запуск малого спутника на ракете Miura 5. Его планируют во время второго испытательного полёта, дату которого определят по итогам первого.",
+      "tags": "бизнес, наука",
+      "link": "https://www.ixbt.com/news/2026/11/19/evropa-polucila-eshhe-odnogo-potencialnogo-konkurenta-spacex-ispanskaia-pld-space-podpisala-pervyi-kommerceskii-kontrakt-na-zapusk-rakety-miura-5.html"
+    },
+    {
+      "id": "https://www.ixbt.com/news/2026/11/19/openai-uskorila-razrabotku-cipov-amd-ii-nasel-do-14-ulucsenii-v-uze-optimizirovannyx-sxemax.html",
+      "date": "2026-11-19T12:09:00.000Z",
+      "source": "iXBT",
+      "title": "OpenAI ускорила разработку чипов AMD: ИИ нашёл до 14% улучшений в уже оптимизированных схемах",
+      "summary": "По данным OpenAI, её модели помогли AMD улучшить отдельные блоки графического процессора до 14% по совокупному показателю энергопотребления, производительности и площади. Часть решений вошла в проект, уже переданный в производство.",
+      "tags": "ИИ, железо",
+      "link": "https://www.ixbt.com/news/2026/11/19/openai-uskorila-razrabotku-cipov-amd-ii-nasel-do-14-ulucsenii-v-uze-optimizirovannyx-sxemax.html"
+    },
+    {
+      "id": "https://www.ixbt.com/news/2026/11/19/amd-kupila-razrabotcika-ii-cipov-taalas-kompaniia-namerena-uskorit-inferens-bez-tradicionnoi-vysokoskorostnoi-pamiati.html",
+      "date": "2026-11-19T11:58:00.000Z",
+      "source": "iXBT",
+      "title": "AMD купила разработчика ИИ-чипов Taalas: компания намерена ускорить инференс без традиционной высокоскоростной памяти",
+      "summary": "AMD приобрела канадскую Taalas, которая встраивает параметры нейросетей непосредственно в чип. Компания планирует использовать разработки Taalas вместе со своими ускорителями Instinct.",
+      "tags": "ИИ, железо, бизнес",
+      "link": "https://www.ixbt.com/news/2026/11/19/amd-kupila-razrabotcika-ii-cipov-taalas-kompaniia-namerena-uskorit-inferens-bez-tradicionnoi-vysokoskorostnoi-pamiati.html"
+    },
+    {
+      "id": "https://www.ixbt.com/news/2026/11/19/ot-snega-v-moskve-do-gta-vi-dzen-predlozil-citateliam-ugadyvat-budushhee.html",
+      "date": "2026-11-19T11:37:00.000Z",
+      "source": "iXBT",
+      "title": "От снега в Москве до GTA VI: «Дзен» предложил читателям угадывать будущее",
+      "summary": "«Дзен» добавил в ленту раздел голосований о предстоящих событиях. Читатели выбирают между «да» и «нет» в вопросах о спорте, погоде и других темах.",
+      "tags": "интернет",
+      "link": "https://www.ixbt.com/news/2026/11/19/ot-snega-v-moskve-do-gta-vi-dzen-predlozil-citateliam-ugadyvat-budushhee.html"
+    },
+    {
+      "id": "https://www.ixbt.com/news/2026/11/19/aliexpress-samye-populiarnye-nedorogie-smartfony-v-rossii-oseni-2026-goda.html",
+      "date": "2026-11-19T11:21:00.000Z",
+      "source": "iXBT",
+      "title": "AliExpress: самые популярные недорогие смартфоны в России осени 2026 года",
+      "summary": "AliExpress СНГ составила рейтинг продаж в России за третий квартал среди смартфонов со средней ценой до 22 тысяч рублей. В десятке оказалось по четыре модели Redmi и Poco, а также по одной модели Realme и Motorola.",
+      "tags": "смартфоны, бизнес",
+      "link": "https://www.ixbt.com/news/2026/11/19/aliexpress-samye-populiarnye-nedorogie-smartfony-v-rossii-oseni-2026-goda.html"
+    }
+  ]
+}
