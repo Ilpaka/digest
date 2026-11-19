@@ -22,3 +22,13 @@ main { padding-block: 20px 48px; }
 :focus-visible { outline: 3px solid #803820; outline-offset: 3px; }
 [role=alert] { color: #972d23; }
 @media(max-width: 680px) { .feed { grid-template-columns: 1fr; } .wrap { width: min(100% - 28px,960px); } }
+.filters { display: flex; flex-wrap: wrap; align-items: end; gap: 14px 20px; padding: 16px 0; border-block: 1px solid #d8d4ca; }
+.filters label { display: grid; gap: 5px; font-size: .9rem; font-weight: 600; }
+.filters label:first-child { flex: 1 1 220px; }
+.filters input[type=search], .filters select { background: white; color: #252b2b; min-height: 42px; font: inherit; padding: 7px 10px; border: 1px solid #776f63; border-radius: 4px; }
+.filters .check { display: flex; align-items: center; gap: 6px; min-height: 42px; }
+.check input { width: 18px; height: 18px; accent-color: #823523; }
+.count { font-size: .9rem; color: #5c5549; }
+.card button { cursor: pointer; align-self: flex-start; margin-top: 18px; padding: 8px 12px; font: inherit; font-size: .9rem; font-weight: 600; border: 1px solid #827b70; border-radius: 4px; color: #3a4039; background: white; }
+.card.read { background: #f0f1ec; }
+.card button[aria-pressed=true] { color: #244d33; border-color: #637d69; }
