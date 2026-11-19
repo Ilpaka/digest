@@ -52,7 +52,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Новости за сутки — одним сообщением: заголовок, источник и ссылка. У Telegram предел 4096 знаков.\nconst dayAgo = Date.now() - 24 * 60 * 60 * 1000\nconst news = $input.first().json.news.filter((item) => new Date(item.date).getTime() >= dayAgo)\nif (news.length === 0) return []\nlet lines = ''\nlet shown = 0\nfor (const item of news) {\n  const line = `\\n• ${item.title} (${item.source})\\n${item.link}\\n`\n  if (lines.length + line.length > 3800) break\n  lines += line\n  shown++\n}\nlet text = `Дайджест за ${new Date().toLocaleDateString('ru')}: ${news.length} новостей\\n` + lines\nif (shown < news.length) text += `\\n…и ещё ${news.length - shown} — на странице дайджеста`\nreturn [{ json: { text } }]"
+        "jsCode": "// Новости за сутки — одним сообщением: заголовок, источник и ссылка. У Telegram предел 4096 знаков.\nconst dayAgo = Date.now() - 24 * 60 * 60 * 1000\nconst news = $input.first().json.news.filter((item) => new Date(item.date).getTime() >= dayAgo)\nif (news.length === 0) return []\nlet lines = ''\nlet shown = 0\nfor (const item of news) {\n  const line = `\\n• ${item.title} (${item.source})\\n${item.link}\\n`\n  if (lines.length + line.length > 3800) break\n  lines += line\n  shown++\n}\nlet text = `Дайджест за ${new Date().toLocaleDateString('ru-RU', { timeZone: 'Europe/Moscow' })}: ${news.length} новостей\\n` + lines\nif (shown < news.length) text += `\\n…и ещё ${news.length - shown} — на странице дайджеста`\nreturn [{ json: { text } }]"
       },
       "name": "Текст сообщения",
       "type": "n8n-nodes-base.code",
