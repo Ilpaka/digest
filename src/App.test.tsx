@@ -6,7 +6,7 @@ import App from './App'
 const old = { id: 'first', date: '2026-11-15T18:00:00Z', source: 'Редакция', title: 'Исследование телескопа', summary: 'Опубликована карта звёзд.', tags: 'наука, железо', link: 'https://example.org/first' }
 const fresh = { ...old, id: 'second', date: '2026-11-16T09:00:00Z', title: 'Новая модель', summary: 'Нейросеть ускорила вычисления.', tags: 'ИИ, наука', link: 'https://example.org/second' }
 function mockNews() {
-  vi.stubGlobal('fetch', vi.fn().mockResolvedValue(Response.json({ news: [old, fresh] })))
+  vi.stubGlobal('fetch', vi.fn().mockImplementation(async () => Response.json({ news: [old, fresh] })))
 }
 afterEach(() => { vi.unstubAllGlobals(); localStorage.clear() })
 
@@ -52,4 +52,28 @@ it('сочетает тег, поиск и фильтр непрочитанны
   expect(screen.getByText('Новостей не найдено')).toBeVisible()
   await user.click(screen.getByRole('checkbox'))
   expect(screen.getByRole('article')).toHaveTextContent(fresh.title)
+})
+
+it('после повторного открытия восстанавливает отметку и позволяет её снять', async () => {
+  mockNews()
+  const user = userEvent.setup()
+  const { unmount } = render(<App />)
+  const buttons = await screen.findAllByRole('button', { name: 'Отметить прочитанным' })
+  await user.click(buttons[0])
+  expect(JSON.parse(localStorage.getItem('digest-read')!)).toEqual([fresh.id])
+
+  unmount()
+  render(<App />)
+  const marked = await screen.findByRole('button', { name: 'Прочитано ✓', pressed: true })
+  expect(marked.closest('article')).toHaveTextContent(fresh.title)
+  await user.click(marked)
+  expect(screen.getAllByRole('button', { pressed: false })).toHaveLength(2)
+  expect(JSON.parse(localStorage.getItem('digest-read')!)).toEqual([])
+})
+
+it('позволяет читать новости при повреждённом значении в хранилище', async () => {
+  mockNews()
+  localStorage.setItem('digest-read', 'invalid')
+  render(<App />)
+  expect(await screen.findAllByRole('button', { pressed: false })).toHaveLength(2)
 })

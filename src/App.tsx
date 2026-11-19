@@ -5,6 +5,17 @@ import { loadNews, tagsOf, type NewsItem } from './news'
 const endpoint = import.meta.env.VITE_DIGEST_URL?.trim()
 const url = endpoint || `${import.meta.env.BASE_URL}data/news.json`
 
+const readKey = 'digest-read'
+
+function loadReadIds(): Set<string> {
+  try {
+    const ids: unknown = JSON.parse(localStorage.getItem(readKey) ?? '[]')
+    return new Set(Array.isArray(ids) ? ids.filter((id) => typeof id === 'string') : [])
+  } catch {
+    return new Set()
+  }
+}
+
 export default function App() {
   const [news, setNews] = useState<NewsItem[]>([])
   const [loading, setLoading] = useState(true)
@@ -13,7 +24,15 @@ export default function App() {
   const [query, setQuery] = useState('')
   const [tag, setTag] = useState('')
   const [unreadOnly, setUnreadOnly] = useState(false)
-  const [read, setRead] = useState<Set<string>>(() => new Set())
+  const [read, setRead] = useState<Set<string>>(loadReadIds)
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(readKey, JSON.stringify([...read]))
+    } catch {
+      // Если запись заблокирована браузером, отметки действуют до закрытия страницы.
+    }
+  }, [read])
 
   function toggleRead(id: string) {
     setRead((previous) => {
